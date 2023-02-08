@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  const title = "Welcome to new blog";
+  const likes = 50;
+  const link = "https://www.youtube.com/watch?v=gpfP60KjmZU";
+  // const people = {name:"Lawn" , age:30}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <h1>{title}</h1>
+        <p>{likes}</p>
+        <p>{10}</p>
+        <p>{[1,2,3,4]}</p>
+        <p>{Math.random() * 10 }</p>
+        <a href={link}>Youtube Site</a>
+      </div>
     </div>
   );
 }
