@@ -1,4 +1,5 @@
-const BlogList = () => {
+const BlogList = ({blogs,title}) => {    
+    console.log(title)
     return(
         <div className="blog-list"> 
             {blogs.map((blog)=>(
